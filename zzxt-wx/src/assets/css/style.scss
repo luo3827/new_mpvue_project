@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+  }
+  .block{
+    display:block;
+  }
+  .in-block{
+    display:inline-block;
+  }
+  .inline{
+    display:inline;
+  }
+  //字体大小
+  .font-10{
+    font-size:10px;
+  }
+  .font-12{
+    font-size:12px;
+  }
+  .font-14{
+    font-size:14px;
+  }
+  .font-16{
+    font-size:16px;
+  }
+  .font-18{
+    font-size:18px;
+  }
+  .font-24{
+    font-size:24px;
+  }
+  //字体颜色
+  .color333{
+    color:#333;
+  }
+  .color000{
+    color:#000;
+  }
+  .color337fff{
+    color:$theme-color;
+  }
+  .color999{
+    color:#999;
+  }
+  .color1{
+    color:#323232;
+  }
+  .color2{
+    color:#878787;
+  }
+  .color3{
+    color:#aaa;
+  }
+  .color4{
+    color:#888;
+  }
+  .color-theme{
+    color:$theme-color
+  }
+  .color-orange{
+    color:#FF9800
+  }
+  //字体weight
+  .weight400{
+    font-weight:400;
+  }
+  .weight500{
+    font-weight:500;
+  }
+  //行高
+  .height20{
+    line-height:20px;
+  }
+  .height22{
+    line-height:22px;
+  }
+  .height24{
+    line-height:24px;
+  }
+  .height26{
+    line-height:26px;
+  }
+  .height28{
+    line-height:28px;
+  }
+  .height30{
+    line-height:30px;
+  }
+  
+  //垂直居中
+  .vermiddle{
+    vertical-align: middle;
+  }
+  .versub{
+    vertical-align: sub;
+  }
+  .vertop{
+    vertical-align: top;
+  }
+  .textcenter{
+    text-align:center;
+  }
+  .textright{
+    text-align:right;
+  }
+  //背景色
+  .bk-white{
+    background-color: #fff;
+  }
+  // view 灰色分隔线
+  .dividerbox{
+    height:6px;
+    background-color: #eee;
+  }
+  
+  //蓝色按钮
+  .blue-btn{
+    width:160px;
+    height:28px;
+    background-color:#fff;
+    opacity:1;
+    font-size:12px;
+    text-align:center;
+    line-height: 28px;
+    font-size:12px;
+    color:$theme-color;
+    border:1px solid $theme-color;
+    border-radius:14px;
+    font-weight:400;
+    &:first-child{
+      margin-right:10px;
+    }
+  }
+  .blue-btn-active{
+    background:$theme-color;
+    color:#fff;
+  }
+  .blue-btn-active-hover{
+    opacity:0.9;
+  }
+  
+  // 学校加标签
+  .cell-title{
+    margin-right:6px;
+  }
+  .card-maintag{
+    background-color: $theme2 !important;
+    color: #fff;
+    border-radius:4px;
+    padding:2px 4px;
+    // vertical-align: sub;
+  }
+  .card-subtag{
+    background-color: $theme2op !important;
+    color: $theme2;
+    border-radius:4px;
+    padding:2px 4px;
+    // vertical-align: sub;
+  }
+  .maintag .van-tag{
+    background-color: $theme2 !important;
+    color: #fff;
+  }
+  .subtag .van-tag{
+    background-color: $theme2op !important;
+    color: $theme2;
+  }
+  .custom-tab{
+    .van-tabs__line{
+      background-color: $theme-color;
+    }
+    .van-tab--active{
+      color: #3e7fff !important;
+    }
+    .van-tab{
+      color:#888;
+    }
+  }
+  //筛选box
+  .top-option-box{
+    height:40px;
+    line-height:38px;
+    .selecticon{
+      vertical-align: sub;
+      margin-left:6px;
+    }
+    .active-icon .oper-icon{
+      color:$theme-color;
+    }
+    .oper-icon{
+      vertical-align: sub;
+      color:#888;
+    }
+    .oper-icon.active{
+      color:$theme-color;
+    }
+  }
+  //下拉框
+  .select-options{
+    position:absolute;
+    background-color:#F2F3F4;
+    position: absolute;
+    // top:-250px;
+    top:0;
+    display:none;
+    width:100%;
+    z-index:100;
+    max-height:250px;
+    overflow-y:scroll; 
+    // transition:top .5s;
+    padding:5px 0;
+    box-sizing: border-box;
+    &.select-show{
+      // top:0px;
+      display:block;
+    }
+    .item{
+      display:flex;
+      line-height:30px;
+      font-size:14px;
+      padding:0 20px;
+      height:30px;
+      color:#323232;
+      &:active,&:hover,&:focus{
+        background-color: rgb(216, 217, 218);
+      }
+    }
+    .item.active{
+      color:$theme-color
+    }
+    .item-active{
+      background-color: rgb(216, 217, 218);
+      &:active,&:hover,&:focus{
+        background-color: rgb(216, 217, 218);
+      }
+    }
+  }
+  
+  .school-card{
+    position: absolute;
+    padding:10px;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+    width:355px;
+    background-color: #fff;
+    border-radius:6px;
+    box-sizing: border-box;
+    z-index:20;
+    .close-card{
+      position:absolute;
+      top:10px;
+      right:10px;
+      width:20px;
+      height:20px;
+    }
+    .school-logo{
+      display:inline-block;
+      width:47px;
+      height:47px;
+    }
+    .school-info{
+      display:inline-block;
+      vertical-align: top;
+      margin-left:10px;
+      width:260px;
+      padding-top:4px;
+    }
+    .schoolname{
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .schoolname-width1{
+      max-width: calc(100% - 40px)
+    }
+    .schoolname-width2{
+      max-width: calc(100% - 80px)
+    }
+    .schoolname-width3{
+      max-width:100%
+    }
+    .oper{
+      margin:3px 0;
+      // height:30px;
+    }
+  }
+  .statisic-card{
+    position: absolute;
+    height:40px;
+    padding:5px;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+    width:355px;
+    background-color: #fff;
+    border-radius:6px;
+    box-sizing: border-box;
+    z-index:10;
+    .statisic-card-flex{
+      display:flex;
+    }
+  }
+  
+  .vertical-split-line{
+    height:20px;
+    width:1px;
+    vertical-align: sub;
+    background-color:#ccc;
+  }
+  .legend-box{
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:50px;
+    height:94px;
+    border-radius:6px;
+    background-color:#fff;
+    padding:6px 0;
+    box-sizing: border-box;
+    .legend{
+      width:8px;
+      margin:4px auto;
+    }
+    .legend-item-1{
+      width:8px;
+      height:10px;
+      background:rgba(0,208,234,1);
+      border-radius:4px 4px 0px 0px;
+    }
+    .legend-item-2{
+      width:8px;
+      height:10px;
+      background:rgba(16,228,255,1);
+    }
+    .legend-item-3{
+      width:8px;
+      height:10px;
+      background:rgba(92,237,255,1);
+    }
+    .legend-item-4{
+      width:8px;
+      height:10px;
+      background:rgba(143,242,255,1);
+    }
+    .legend-item-5{
+      width:8px;
+      height:10px;
+      background:rgba(201,249,255,1);
+      border-radius:0px 0px 4px 4px;
+    }
+  }
+  
