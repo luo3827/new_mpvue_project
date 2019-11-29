@@ -60,6 +60,13 @@ npm install sass-resources-loader --save-dev
         sass: generateLoaders('sass', { indentedSyntax: true }, sassResourceLoader),
         scss: generateLoaders('sass', {}, sassResourceLoader),
 
+
+# 安装 mpvue-echarts 及 echarts 插件
+## mpvue-echarts
+npm i mpvue-echarts --save
+## echarts
+npm i echarts --save
+
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
