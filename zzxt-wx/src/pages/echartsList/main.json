@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "echarts列表",
+  "usingComponents": {
+    "van-grid": "/static/vant/grid/index",
+    "van-grid-item": "/static/vant/grid-item/index"
+  }
+}
